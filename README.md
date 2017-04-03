@@ -1,3 +1,3 @@
 # servers
 Example of my first servers with NodeJS
-This is an Echo server with html serving
+This server is built using express package with html
