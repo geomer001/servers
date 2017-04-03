@@ -1,11 +1,14 @@
-var http = require('http');
-var fs = require('fs');
+var express = require('express');
 
-http.createServer(function(request,response){
+var app = express();
 
- response.writeHead(200, {'Content-Type': 'text/html'});
- var myReadStream = fs.createReadStream(__dirname + '/index1.html', 'utf8');
- myReadStream.pipe(response);
-}).listen(8080,'127.0.0.1');
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index1.html');
+});
 
-console.log('Server is running');
+app.get('/contact', function(req, res){
+  res.send('Contacts ----__________----');
+});
+
+app.listen(3000);
+
