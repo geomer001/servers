@@ -1,9 +1,12 @@
 {
-  "name": "echo-server",
+  "name": "server",
   "version": "1.0.0",
-  "description": "testing",
+  "description": "server using express",
   "main": "app.js",
-  "dependencies": {},
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,3 +14,4 @@
   "author": "geomer001",
   "license": "ISC"
 }
+
